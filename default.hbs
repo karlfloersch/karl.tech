@@ -29,9 +29,10 @@
     <meta itemprop="description" content="{{meta_description}}">
 
     {{> custom/meta this}}
-
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://use.typekit.net/wrv2ndz.js"></script>
     <script>try{Typekit.load({ async: false });}catch(e){}</script>
+
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
@@ -41,10 +42,8 @@
 
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}"/>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
       {{> custom/config}}
-
       // Pace Options
       // ==============
       window.paceOptions = {
@@ -54,7 +53,6 @@
         restartOnRequestAfter: 500,
         startOnPageLoad: false
       }
-
       // Ghostium Globals
       // ==============
       window.GHOSTIUM = {};
@@ -87,7 +85,6 @@
     <script src="{{asset 'js/foot-scripts.min.js'}}"></script>
 
     <script type="text/javascript">
-
       if(GHOSTIUM.haveGA) {
         (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
         function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
@@ -96,7 +93,6 @@
         z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
         ga('create',ga_ua);ga('send','pageview');
       }
-
       if(GHOSTIUM.haveDisqus) {
         (function () {
         var s = document.createElement('script'); s.async = true;

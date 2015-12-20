@@ -162,7 +162,8 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         options: {
-          report: 'gzip'
+          // report: 'gzip'
+          report: 'min'
         }
       }
     },
@@ -175,7 +176,8 @@ module.exports = function(grunt) {
       build: {
         options: {
           banner: '<%= tag.banner %>',
-          report: 'gzip'
+          // report: 'gzip'
+          report: 'min'
         },
         files: [{
           expand: true,
