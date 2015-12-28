@@ -162,7 +162,6 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         options: {
-          // report: 'gzip'
           report: 'min'
         }
       }
@@ -176,7 +175,6 @@ module.exports = function(grunt) {
       build: {
         options: {
           banner: '<%= tag.banner %>',
-          // report: 'gzip'
           report: 'min'
         },
         files: [{
@@ -381,7 +379,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('report', [
     'jshint:report',
-    'csscss:report',
+    // 'csscss:report',
     'csslint:report'
   ]);
 
