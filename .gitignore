@@ -71,5 +71,8 @@ nbproject/*
 node_modules/*
 src/assets/_components/*
 
+# Karl added
+dist/*
+
 # Ghostium
 build
