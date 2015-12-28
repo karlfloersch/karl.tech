@@ -1,16 +1,19 @@
 .cover {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  z-index: 100;
+  // top: 0;
+  // left: 0;
+  // width: 30%;
+  // height: 100%;
+  // z-index: 100;
 
-  @include breakpoint(medium) {
     width: 100%;
     height: 30%;
     min-height: 300px;
-  }
+  // @include breakpoint(medium) {
+  //   width: 100%;
+  //   height: 30%;
+  //   min-height: 300px;
+  // }
 }
 
 .cover-image {
@@ -31,10 +34,13 @@
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
-  @include breakpoint(medium) {
+
     text-align: center;
     padding: 0 15px;
-  }
+  // @include breakpoint(medium) {
+  //   text-align: center;
+  //   padding: 0 15px;
+  // }
 }
 
 .cover-logo {
