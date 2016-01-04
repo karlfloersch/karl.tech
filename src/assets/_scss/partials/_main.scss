@@ -11,6 +11,7 @@ body {
 }
 
 #container {
+  padding-top: 60px;
   position: relative;
   transition: transform cubic-bezier(.2, .3, .25, .9) .2s, opacity .3s;
   backface-visibility: hidden;
@@ -50,6 +51,10 @@ body {
 .content {
   position: relative;
   height: 100%;
+}
+
+.content-padding {
+  /*padding-top: 30px;*/
 }
 
 .wrapper {
@@ -106,4 +111,56 @@ body {
       padding: 25px 15px;
     }
   }
+}
+
+.homepage-thumbnail{
+  width: 100%;
+  height: 200px;
+}
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: auto;
+  height: auto;
+}
+
+.navigation button {
+  color: #777;
+}
+.navigation button:hover {
+  color: rgba(0,0,0,.87);
+}
+
+.navigation {
+  position:fixed; 
+  z-index:1000;
+  background-color:#ffffff;
+  width:100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #CCCCCC;
+  height: 57px;
+  padding-left:5px;
+  transition: top 0.2s ease-in-out;
+  top: 0;
+}
+.navigation .nav-current {
+  border-bottom-style: solid;
+  border-bottom-color: rgb(41, 170, 226);
+  color: rgba(0,0,0,.87);
+}
+.navigation-up {
+  top: -60px; // same as header height. use variables in LESS/SASS
 }

@@ -1,11 +1,15 @@
 {{!< default}}
 
-<section class="wrapper wrapper-post">
+<section class="wrapper wrapper-post" style="overflow:visible;">
+      {{#post}}
+
+  <div class="post-image" style="background-image: url({{image absolute="true"}});background-repeat: no-repeat;background-position: center; width:100%;margin-top:-60px;"></div>
+
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
-      {{#post}}
         <section class="post-container">
           <header class="post-header">
+
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished">

@@ -25,6 +25,7 @@
 
 .drawer-button {
   position: fixed;
+  display: none; /*Hack to hide the drawer*/
   top: 10px;
   left: 10px;
   width: 45px;

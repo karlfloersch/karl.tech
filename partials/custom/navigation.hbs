@@ -25,27 +25,29 @@ Ghostium uses Font Awesome you can find all icons available on the url below
 
 }}
 
-<li class="drawer-list-item">
-  <a href="/" data-pjax>
-    <i class="fa fa-home"></i>Home
-  </a>
-</li>
-<li class="drawer-list-item">
-  <a href="{{@blog.url}}/rss/">
-    <i class="fa fa-rss"></i>Subscribe to Feed
-  </a>
-</li>
-<li class="drawer-list-divider"></li>
-<li class="drawer-list-item drawer-list-title">
-  Follow me
-</li>
-<li class="drawer-list-item">
-  <a href="http://twitter.com" target="_blank">
-    <i class="fa fa-twitter"></i>Twitter
-  </a>
-</li>
-<li class="drawer-list-item">
-  <a href="http://github.com" target="_blank">
-    <i class="fa fa-github"></i>Github
-  </a>
-</li>
+
+<div style="position:fixed; z-index:100;background-color:#ffffff;width:100%;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #CCCCCC;height: 57px;">
+<a href="/" data-pjax><img src={{@blog.logo}} style="
+    width: 168px;
+"></a>
+<a href="/" data-pjax><button class="mui-btn mui-btn--raised" style="
+    font-family: &quot;Open Sans&quot;,&quot;Myriad Pro&quot;,&quot;Lucida Grande&quot;,droid-sans-mono,&quot;Lucida Sans&quot;,Geneva,Verdana,sans-serif;
+    border-style: none;
+    margin-top: -13px;
+    margin-bottom: 0px;
+    height: 69px;
+    border: none;
+    box-shadow: none;
+    padding-top: 16px;
+">Home</button></a>
+<a href="/" data-pjax><button class="mui-btn mui-btn--raised" style="
+    font-family: &quot;Open Sans&quot;,&quot;Myriad Pro&quot;,&quot;Lucida Grande&quot;,droid-sans-mono,&quot;Lucida Sans&quot;,Geneva,Verdana,sans-serif;
+    border-style: none;
+    margin-top: -13px;
+    margin-bottom: 0px;
+    height: 69px;
+    border: none;
+    box-shadow: none;
+    padding-top: 16px;
+">Featured</button></a>
+</div>

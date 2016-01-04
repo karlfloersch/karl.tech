@@ -32,6 +32,8 @@
 
     <script src="https://use.typekit.net/wrv2ndz.js"></script>
     <script>try{Typekit.load({ async: false });}catch(e){}</script>
+    <link href="//cdn.muicss.com/mui-0.2.9/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.2.9/js/mui.min.js"></script>
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
@@ -68,15 +70,15 @@
     {{ghost_head}}
   </head>
   <body class="{{body_class}}">
+    {{navigation}}
 
-    {{> drawer this}}
-
-    <div class="drawer-overlay"></div>
     <main id="container" role="main" class="container">
       <div class="surface">
         <div class="surface-container">
-          <div data-pjax-container class="content">
-            {{{body}}}
+          <div class="content-padding">
+            <div data-pjax-container class="content">
+              {{{body}}}
+            </div>
           </div>
         </div>
       </div>
@@ -85,6 +87,7 @@
     {{ghost_foot}}
 
     <script src="{{asset 'js/foot-scripts.min.js'}}"></script>
+    <script src="{{asset 'js/custom-scripts.js'}}"></script>
 
     <script type="text/javascript">
 

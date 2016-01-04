@@ -1,0 +1,22 @@
+{{! This is the navigation control }}
+
+<div class="navigation"style="">
+    <a href="/" data-pjax><img src={{@blog.logo}} style="
+        width: 168px;
+    "></a>
+        <!-- Loop through the navigation items -->
+        {{#foreach navigation}}
+  <a href={{url absolute="true"}} data-pjax><button class="mui-btn mui-btn--raised nav-{{slug}}{{#if current}} nav-current{{/if}}" style="
+      font-family: &quot;Open Sans&quot;,&quot;Myriad Pro&quot;,&quot;Lucida Grande&quot;,droid-sans-mono,&quot;Lucida Sans&quot;,Geneva,Verdana,sans-serif;
+      margin-top: -13px;
+      margin-bottom: 0px;
+      height: 69px;
+      box-shadow: none;
+      padding-top: 16px;
+      border-radius: 0px;
+  ">{{label}}</button></a>
+
+        {{/foreach}}
+        <!-- End the loop -->
+    </ul>
+</div>

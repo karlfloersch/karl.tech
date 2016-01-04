@@ -1,15 +1,18 @@
 <article itemscope itemtype="http://schema.org/BlogPosting"
   role="article" class="post-item {{post_class}}">
-  <header class="post-item-header">
-    <h2 itemprop="name" class="post-item-title">
-      <a href="{{url}}" itemprop="url" data-pjax title="{{{title}}}">
+  <a href="{{url}}" itemprop="url" data-pjax title="{{{title}}}">
+    <header class="post-item-header">
+      <h2 itemprop="name" class="post-item-title">
+        <div class="thumbnail homepage-thumbnail">
+          <img src={{image}} class="portrait" alt="Image" />
+        </div>
         {{{title}}}
-      </a>
-    </h2>
-  </header>
-  <section itemprop="description" class="post-item-excerpt">
-    <p>{{excerpt words="35"}}&hellip;</p>
-  </section>
+      </h2>
+    </header>
+    <section itemprop="description" class="post-item-excerpt">
+      <p>{{excerpt words="35"}}&hellip;</p>
+    </section>
+  </a>
   <footer class="post-item-footer">
     <ul class="post-item-meta-list">
       <li class="post-item-meta-item">

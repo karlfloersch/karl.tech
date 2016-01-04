@@ -4,6 +4,8 @@
 .post-item-footer,
 .post-item-excerpt {
   padding-bottom: 5px;
+
+
 }
 
 .post-item {
@@ -19,12 +21,6 @@
   &:last-child {
     border-bottom: 0;
   }
-}
-
-.post-item-header {}
-
-.post-item-title {
-  line-height: 1.1;
 
   a {
     text-decoration: none;
@@ -34,6 +30,13 @@
 
     }
   }
+}
+
+.post-item-header {}
+
+.post-item-title {
+  line-height: 1.1;
+
 }
 
 .post-item-excerpt {
@@ -130,4 +133,6 @@
   &.post-list-pagination-item-next { float: right; }
 }
 
-
+.post-item a p {
+  color: rgba(0,0,0,.8);
+}
