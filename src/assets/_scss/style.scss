@@ -1,4 +1,19 @@
 //----------------------------------*\
+// MUI
+//----------------------------------*/
+
+// import MUI colors
+@import "mui/mui-colors.scss";
+
+// customize MUI variables
+$mui-btn-default-ripple-color: #1B75BC;
+$mui-primary-color: #29AAE2;
+
+// import MUI SASS
+@import "mui/mui.scss";
+
+
+//----------------------------------*\
 // SCSS MIXINS
 //----------------------------------*/
 
@@ -19,7 +34,7 @@
 
 @import "modules/_buttons.scss";
 @import "modules/_figures.scss";
-@import "modules/_forms.scss";
+// @import "modules/_forms.scss";
 @import "modules/_lists.scss";
 @import "modules/_quotes.scss";
 @import "modules/_tables.scss";
@@ -49,6 +64,8 @@
 
 @import "vendor/_pace.scss";
 @import "vendor/_prism.scss";
+
+
 
 // External
 @import "vendor/_gist.scss";

@@ -150,7 +150,7 @@ body {
   width:100%;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #CCCCCC;
+  border-bottom-color: #DDD;
   height: 57px;
   padding-left:5px;
   transition: top 0.2s ease-in-out;
@@ -164,3 +164,91 @@ body {
 .navigation-up {
   top: -60px; // same as header height. use variables in LESS/SASS
 }
+
+.mailing-list-popup {
+  margin-left: -3px;
+  position:fixed; 
+  z-index:1000;
+  background-color:#ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DDD;
+  border-bottom-style: none;
+  height: 57px;
+  transition: top 0.2s ease-in-out;
+  display:none;
+  font-family: "Open Sans","Myriad Pro","Lucida Grande",droid-sans-mono,"Lucida Sans",Geneva,Verdana,sans-serif;
+  font-size: 13px;
+
+
+
+  padding: 0px 10% 40px 185px;
+  max-width: 910px;
+
+  @include breakpoint(medium) {
+    padding: 0px 10%;
+    max-width: 100%;
+  }
+
+  .wrapper-post & {
+    @extend .center-block;
+    max-width: 910px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include breakpoint(medium) {
+      width: 75%;
+    }
+
+    @include breakpoint(small) {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(small) {
+    &,
+    .wrapper-post & {
+      padding: 25px 15px;
+    }
+  }
+
+}
+#mailing-large {
+  display:block;
+
+  @include breakpoint(small) {
+    display:none;
+  }
+}
+#mailing-small {
+  display:none;
+
+  @include breakpoint(small) {
+    display:block;
+  }
+}
+#small-email {
+  display: none;
+}
+#small-cta {
+  display: block;
+}
+#mailing-success {
+  display: none;
+  height: 40px;
+  border-radius: 0px;
+  margin-left: 4px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.mailing-submit-btn {
+  font-family: "Open Sans", "Myriad Pro", "Lucida Grande",droid-sans-mono, "Lucida Sans",Geneva,Verdana,sans-serif;
+  height: 40px;
+  border-radius: 0px;
+  margin-left: 4px;
+  color: #fff !important;
+  background-color: #29AAE2 !important;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+

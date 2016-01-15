@@ -89,6 +89,75 @@
       <section itemprop="comment" class="post-comments">
         <div id="disqus_thread"></div>
       </section>
+    <div class="mailing-list-popup" style="margin-left: -3px;">
+      <div style="width: 550px; margin: auto;">
+
+        {{! Small display }}
+        <form id="mailing-small" class="mui-form--inline" style="margin-top: -20px;">
+          <div id="small-cta">
+            <button id="cta-button" type="button" class="mui-btn mui-btn--raised" style="
+                font-family: &quot;Open Sans&quot;,&quot;Myriad Pro&quot;,&quot;Lucida Grande&quot;,droid-sans-mono,&quot;Lucida Sans&quot;,Geneva,Verdana,sans-serif;
+            height: 55px;
+            border-radius: 0px;
+            margin-left: 4px;
+            position: absolute;
+            left: -4px;
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-top: -5px;
+            width: 100%;
+            ">
+              <i class="fa fa-arrow-circle-o-right" style="
+                position: absolute;
+                margin-top: 3px;
+                font-size: 30px;
+                color: #29AAE2;
+                margin-left: -30px;
+              "></i>
+              Get your FREE Ethereum Guide
+            </button>
+          </div>
+          <div id="small-email">
+            <div class="mui-textfield" style="width:60%; position:absolute;">
+              <input type="email" placeholder="email@domain.com">
+            </div>
+            <button type="button" class="mui-btn mui-btn--raised mailing-submit-btn" style="position:absolute; right: 6%;">Submit</button>
+          </div>
+        </form>
+
+        {{! Large display }}
+        <form id="mailing-large" class="mui-form--inline" style="margin:auto">
+          <i class="fa fa-arrow-circle-o-right" style="
+            position: absolute;
+            margin-top: 16px;
+            font-size: 30px;
+            color: #29AAE2;
+          "></i>
+          <span style="
+            padding-left: 31px;
+            font-size: 14px;
+            padding-right: 8px;
+          ">Get your FREE Ethereum Guide: </span>
+          <div class="mui-textfield">
+            <input type="email" placeholder="email@domain.com">
+          </div>
+          <a href="#"><button type="button" class="mailing-submit-btn mui-btn mui-btn--raised" style="
+              font-family: &quot;Open Sans&quot;,&quot;Myriad Pro&quot;,&quot;Lucida Grande&quot;,droid-sans-mono,&quot;Lucida Sans&quot;,Geneva,Verdana,sans-serif;
+              height: 40px;
+              border-radius: 0px;
+              margin-left: 4px;
+              color: #fff;
+              background-color: #29AAE2;
+              padding-left: 13px;
+              padding-right: 13px;
+          ">Submit</button></a>
+        </form>
+        {{! Success }}
+        <div id="mailing-success">
+          Success
+        </div>
+      </div>
+    </div>
     </article>
 
     {{> footer this}}
