@@ -170,12 +170,11 @@ body {
 .mailing-list-popup {
   margin-left: -3px;
   position:fixed; 
-  z-index:1000;
+  z-index:999;
   background-color:#ffffff;
   border-style: solid;
   border-width: 1px;
   border-color: #DDD;
-  border-bottom-style: none;
   height: 57px;
   transition: top 0.2s ease-in-out;
   display:none;
