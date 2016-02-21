@@ -70,19 +70,11 @@ setInterval(function() {
     hasScrolled();
     didScroll = false;
   }
-}, 250);
+}, 50);
 
-function handleStickyScroll(st) {
-  console.log('current pos plus viewport: ' + ($('.post-container').height() + $('.post-image').height()));
-  console.log('height of article: ' + (st + $(window).height()));
-  return false;
-}
 
 function hasScrolled() {
   var st = $(this).scrollTop();
-  //Check to see if this was a sticky scroll, so we won't show or hide.
-  if(handleStickyScroll(st))
-    return;
 
   if($('.mailing-list-popup').find('input').is(':focus'))
     return;
