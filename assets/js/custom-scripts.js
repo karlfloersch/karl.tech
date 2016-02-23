@@ -40,9 +40,13 @@ function mailingListClick() {
     $('#small-email').fadeIn();
   });
   $('.mailing-submit-btn').click(function() {
-    $('#mailing-small').fadeOut();
-    $('#mailing-large').fadeOut();
-    $('#mailing-success').fadeIn();
+    
+    if($('#mce-EMAIL').hasClass('valid')) {
+      $('#small-email').css('position', 'absolute');
+      $('#small-email').fadeOut();
+      $('#mailing-large').fadeOut();
+      $('#mailing-success').fadeIn();
+    }
   });
 }
 
@@ -56,21 +60,16 @@ function resizePostImage() {
 }
 
 /* Hide navbar */
-var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
 $(window).scroll(function(){
-  didScroll = true;
 });
 
 setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 50);
+  hasScrolled();
+}, 100);
 
 
 function hasScrolled() {
@@ -78,6 +77,10 @@ function hasScrolled() {
 
   if($('.mailing-list-popup').find('input').is(':focus'))
     return;
+
+  $('.mailing-list-popup').css({
+    'width': $('.post').width()+3
+  });
   
   /* Make sure they scroll more than delta */
   if(Math.abs(lastScrollTop - st) <= delta)
@@ -102,12 +105,12 @@ function hasScrolled() {
       if($('.mailing-list-popup').length != 0){
         $('.mailing-list-popup').css({
           'top': $(window).height()-57,
-          'width': $('.post').width()+3
         });
         mailingListClick();
       }
     }
   }
+
   
   lastScrollTop = st;
 }

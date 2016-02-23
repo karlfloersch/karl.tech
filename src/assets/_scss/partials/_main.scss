@@ -243,13 +243,13 @@ body {
   padding-left: 13px;
   padding-right: 13px;
 
-  margin-top: 10px;
-  font-size: 23px;
+  margin-top: 20px;
+  font-size: 14px;
   font-weight: bold;
   color: #42B3E4;
 
   @include breakpoint(small) {
-    margin-top: -11px;
+    margin-top: 10px;
   }
 }
 .mailing-submit-btn {
@@ -277,5 +277,16 @@ body {
   display: none;
   @include breakpoint(x-small) {
     display: block;
+  }
+}
+
+#mc-embedded-subscribe-form {
+  padding-left:25px;
+  padding-right:25px;
+  margin-top: 0px !important;
+  @include breakpoint(small) {
+    margin-top: -25px !important;
+    padding-left:0px;
+    padding-right:0px;
   }
 }
