@@ -1,3 +1,5 @@
+var $ = jQuery;
+
 /* global $ */
 /* eshint no-console:1 */
 if ($.support.pjax) {
