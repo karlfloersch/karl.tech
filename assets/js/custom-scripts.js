@@ -50,6 +50,21 @@ function mailingListClick() {
       $('#mailing-success').fadeIn();
     }
   });
+
+  /* When input in focused, raise the footer
+   * to the middle of the screen if browser has touch */
+  if ('ontouchstart' in window) {
+    $('.mailing-list-popup').find('input').focusin(function (){
+      $('.mailing-list-popup').css({
+        'top': $(window).height()*0.5,
+      });
+    });
+    $('.mailing-list-popup').find('input').focusout(function (){
+      $('.mailing-list-popup').css({
+        'top': $(window).height()-57,
+      });
+    });
+  }
 }
 
 /* Resize post images */
@@ -96,7 +111,7 @@ function hasScrolled() {
     // Control bottom nav
     if($('.mailing-list-popup').length != 0){
       $('.mailing-list-popup').css({
-        'top': $(window).height()+1
+        'top': $(window).height()+600
       });
     }
   } else {
